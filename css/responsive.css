@@ -1,60 +1,60 @@
 /* Soluzione qui */
 
-
 /* Modalità Tablet >768px*/
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+  /* Titolo allineato a sinistra */
+  #topbar {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-    /* Titolo allineato a sinistra */
-    #topbar {
-        display: flex;
-        justify-content: flex-start;
-    }
+  /* Padding prima sezione aumenta */
+  .recipe {
+    padding: 20px;
+  }
 
-    /* Padding prima sezione aumenta */
-    .recipe {
-        padding: 20px;
-    }
+  /* Compare il testo "(Dolce Tradizionale)" */
+  .recipe-origin {
+    display: inline;
+  }
 
-    /* Compare il testo "(Dolce Tradizionale)" */
-    .recipe-origin {
-        display: inline;
-    }
+  /* La grandezza del titolo diventa più grande */
+  .recipe-title {
+    font-size: 1.5rem;
+  }
 
-    /* La grandezza del titolo diventa più grande */
-    .recipe-title {
-        font-size: 1.5rem;
-    }
+  /* Le informazioni della ricetta sotto il video si dispongono a griglia */
+  .quick-notes ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    /* Le informazioni della ricetta sotto il video si dispongono a griglia */
-    .quick-notes ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: start;
-    }
+  .quick-notes ul li {
+    width: calc(100% / 3);
+  }
 
-    .quick-notes li {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
+  /* I bottoni social si allargano */
+  .social-networks .btn {
+    width: 20%;
+  }
 
-    /* I bottoni social si allargano */
+  /* compare il banner pubblicitario */
+  .ads {
+    display: block;
+  }
 
+  /* l'immagine nella descrizione della ricetta viene circondata dal testo */
+  .clearfix img {
+    float: left;
+    margin-right: 15px;
+  }
 
-    /* compare il banner pubblicitario */
-
-
-    /* l'immagine nella descrizione della ricetta viene circondata dal testo */
-
-    
 }
-
-
-
 
 /* Modalità Desktop >992px */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+
     
 }
