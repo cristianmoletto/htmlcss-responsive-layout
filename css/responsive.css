@@ -1,5 +1,24 @@
 /* Soluzione qui */
 
+
+/* Modalità Large Mobile (576px) */
+
+@media screen and (min-width: 576px) {
+
+/* l'immagine nella descrizione della ricetta viene circondata dal testo anche su mobile ma solo se c'è spazio sufficiente, quindi a partire da 576px */
+.clearfix img {
+    float: left;
+    margin-right: 15px;
+}
+
+/* I bottoni social si allagano già su dispositivi mobile più grandetti (576px) */
+.social-networks .btn {
+    width: 20%;
+  }
+
+}
+
+
 /* Modalità Tablet >768px*/
 
 @media screen and (min-width: 768px) {
@@ -49,12 +68,63 @@
     float: left;
     margin-right: 15px;
   }
-
 }
+
 
 /* Modalità Desktop >992px */
 
 @media screen and (min-width: 768px) {
+  /* La grandezza del titolo della ricetta aumenta ancora di più */
+  .recipe-title {
+    font-size: 2.5rem;
+  }
 
-    
+  /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
+  .recipe-card {
+    display: flex;
+  }
+
+  .recipe-video {
+    width: 65%;
+  }
+
+  .recipe-info {
+    width: 35%;
+  }
+
+  .quick-notes ul {
+    display: block;
+  }
+
+  .quick-notes ul li {
+    width: 100%;
+  }
+
+
+  /* Compaiono i nomi delle piattaforme social */
+  .social-networks .label {
+    display: inline;
+  }
+
+  /* Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti */
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer address {
+    width: 40%;
+    text-align: left;
+  }
+
+  footer nav {
+    width: 60%;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
 }
+
+
